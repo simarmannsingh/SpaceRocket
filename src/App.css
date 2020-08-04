@@ -1,0 +1,119 @@
+:root{
+  font-size: 16px;
+  font-family: 'Open Sans';
+   /* all the text fonts*/
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+
+  /* Background colors */
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --bg-tertiary: #19234c;
+  
+  /* Animation speeds */
+  --transition-speed: 600ms;
+
+}
+
+
+.App {
+  background-color: var(--bg-tertiary);
+  height: 100vh;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.main-content{  
+  display: grid;
+  color: white;
+  grid-template-areas: 
+      "area1 image1";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+    
+}
+
+.btn-area1{
+ width: 150px;
+ height: 40px;
+ font-size: 20px;
+ border-radius: 7px;
+ background-color: rgb(70, 70, 214);
+ color: white;
+ cursor: pointer;
+ border: 1px solid rgb(193, 199, 231);
+}
+
+.left-grid {
+  grid-area: area1;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.right-grid{
+  grid-area: image1;
+  text-align: center;
+  width: 85%;  
+}
+
+
+.main-content h1{
+  font-size: 50px;   
+}
+
+
+.main-image{  
+  
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(59, 122, 240);
+  width: 100%;
+  height: 65px;
+}
+
+.navbar a{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.navlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li{
+  padding: 20px;
+}
+
+.navbar a{  
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

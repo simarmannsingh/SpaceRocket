@@ -5,17 +5,21 @@ import {
 } from 'react-router-dom'
 
 import './App.css';
-import Maincontent from './components/maincontent';
-import Navbar from './components/navbar';
 import HomePage from './pages/HomePage';
+import About from './pages/About';
+import Contactus from './pages/Contactus';
 
 function App() {
   return (
     <Router>
-      <div className="App">      
+      <div className="App">
+        
+        <div id="page-body">
         <Route path="/" component={HomePage} exact />
-        
-        
+        <Route path="/about" component={About} />
+        <Route path="/contact-us" component={Contactus} />
+        <Route path="/HomePage" component={HomePage} />
+        </div>       
     </div>
     </Router>    
   );

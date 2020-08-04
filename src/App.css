@@ -1,113 +1,189 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 :root{
-  font-size: 16px;
-  font-family: 'Open Sans';
-   /* all the text fonts*/
+  font-size: 16px;  
+  font-family: 'Montserrat', sans-serif;
+   
+  /* Text colors */
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
 
   /* Background colors */
   --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --bg-secondary: #9e9ea5;
   --bg-tertiary: #19234c;
-  
+
+  --btn-primary: rgb(118, 119, 116);
+  --btn-primary-hover: rgb(156, 163, 142);
+  --btn-secondary:#3a8ff0;
+  --btn-secondary-hover:#529df3;
   /* Animation speeds */
   --transition-speed: 600ms;
 
 }
 
-
 .App {
-  background-color: var(--bg-tertiary);
-  height: 100vh;
-  width: 100%;
+  background-color: var(--bg-tertiary);  
+  width: 100%;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-height: 10vh;
+  align-items: center;  
+  background-color: var(--bg-tertiary);  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.navlinks{
+  display: flex;    
+  justify-content: space-between;
+  width: 30%;  
+  list-style: none;  
+  margin-top: 25px;
+}
+
+.navlinks a{
+  text-decoration: none;
+  color: #ececec;
+  letter-spacing: 2px;
+  font-weight: bold; 
+}
+
+.navlinks li:nth-child(4){   
+  background-color: var(--btn-secondary);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: -9px;
+  
+}
+
+.navlinks li:nth-child(4):hover{
+  background-color: rgb(170, 118, 118);
 }
 
 .main-content{  
   display: grid;
-  color: white;
+  color: white;  
   grid-template-areas: 
       "area1 image1";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-    
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.btn-area1{
+.main-content h1{
+  font-size: 35px;  
+}
+
+.main-content h4{
+  padding: 20px;
+}
+
+.btn-main, .btn-secondary{
  width: 150px;
  height: 40px;
- font-size: 20px;
- border-radius: 7px;
- background-color: rgb(70, 70, 214);
+ font-size: 20px; 
+ background-color: var(--btn-primary);
+ background: linear-gradient(145deg, #6370e0, #4e2ce4 );
  color: white;
- cursor: pointer;
- border: 1px solid rgb(193, 199, 231);
+ cursor: pointer; 
+ border: none;
+ border-radius: 5px;
 }
+
+.btn-main:hover{
+  background-color: var(--btn-primary-hover);
+}
+
+.btn-secondary{
+ background-color: var(--btn-secondary) !important;
+}
+
+.btn-secondary:hover{
+  background-color: var(--btn-secondary-hover) !important;
+}
+
 
 .left-grid {
   grid-area: area1;
+  justify-content: space-around;
   text-align: center;
   margin-top: 150px;
+
 }
 
 .right-grid{
   grid-area: image1;
   text-align: center;
-  width: 85%;  
+  margin-top: 60px;
 }
 
-
-.main-content h1{
-  font-size: 50px;   
-}
-
-
-.main-image{  
-  
-}
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(59, 122, 240);
+.secondary-content, .tertiary-content{
+  display: block;
+  background-color: var(--bg-secondary);
   width: 100%;
-  height: 65px;
+  height: fit-content;
+  color: #f1eaea;
+  padding: 50px;
+  text-align: center;
 }
 
-.navbar a{
-  padding-left: 20px;
-  padding-top: 20px;
+.secondary-content p{
+  padding: 40px;
 }
 
-.navlinks{
+.section-secondary{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  flex-direction: row;  
+  text-align: justify;  
 }
 
-.navlinks li{
-  padding: 20px;
+.tertiary-content{
+  display: flex;
+  justify-content: space-between;  
+  background-color: var(--bg-tertiary);
+
 }
 
-.navbar a{  
-  font-size: 20px;
-  text-decoration: none;
-  font-family: 'Ubuntu';
-  color: white;
+.contact-details{
+  text-align: left;  
 }
 
+.contact-details p{
+  padding: 3px;
+}
+
+.middle-content{
+
+}
+
+.social-media{
+  display: flex;  
+  justify-content: space-between;
+  width: 12%;
+  font-size: 30px;  
+}
+.social-media a{
+  color: var(--bg-secondary);
+}
 
 @keyframes App-logo-spin {
   from {

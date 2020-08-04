@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import spaceship from "../assets/spaceship.svg"
+import bgmain from "../assets/bg-main.png";
 
 
 class Maincontent extends Component {
     
     render() { 
         return ( 
-            <div className="main-content">
+            <React.Fragment>
+                <section>
+                    <div className="main-content">
 
-                <div className="left-grid">
-                   <h1>Welcome to <u>Planet Earth</u></h1>
-                   <h4>We bet you cannot return to your planet.</h4>
-                   <button type="button" className="btn-area1">Start here</button>
-                </div>
+                        <div className="left-grid">
+                            <h1>Pendyala Nritya Bharathi <br/> Academy of Fine Arts</h1><br/>
+                            <h3>Dr. Sanagavarapu Purushottama Bharathi</h3><br/>
+                            <button type="button" className="btn-main">Start here</button>
+                        </div>
 
-                <div className="right-grid">
-                   <span className="main-image">
-                    <img src={spaceship} alt="spaceships"/>
-                   </span>
-                </div>
+                        <div className="right-grid">
+                            <span>
+                                <img src={bgmain} alt="bg-mains"/>
+                            </span>
+                        </div>
 
-            </div>
+                    </div>
+                </section>
+            </React.Fragment>
          );
     }
 }

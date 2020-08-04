@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
     state = {  }
     render() { 
         return ( 
-            <div className="navbar">
-                <a href="#">Homie</a>    
-                <ul className="navlinks">
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Contact us</a></li>
+            <nav>
+                <div>
+                    <Link to="/"><h3 className="logo">BrandName</h3></Link>
+                </div>
+                <ul className="navlinks">                    
+                    <li>
+                        <Link to="/plans">Plans</Link>
+                    </li>
+                    <li>
+                        <Link to="/pricing">Pricing</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact-us">Contact us</Link>
+                    </li>
+                    <li>
+                    <div className="hamburger-menu">
+                   
+                   </div></li>                    
                 </ul>
                 
-            </div>
+            </nav>
          );
     }
 }

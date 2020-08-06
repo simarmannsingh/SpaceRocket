@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TertiaryContent extends Component {    
+class MainpageFooter extends Component {    
     render() { 
         return ( 
             <React.Fragment>
@@ -41,4 +41,4 @@ class TertiaryContent extends Component {
     }
 }
  
-export default TertiaryContent;
+export default MainpageFooter;

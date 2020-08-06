@@ -46,8 +46,8 @@ nav{
 .logo{
   font-size: 20px;
   text-transform: uppercase;
-  color: white;
   letter-spacing: 3px;
+  color: white;
 }
 
 .navlinks{
@@ -75,6 +75,69 @@ nav{
 
 .navlinks li:nth-child(4):hover{
   background-color: rgb(170, 118, 118);
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+.hamburger-menu  div{
+  width: 20px;
+  height: 2px;
+  background-color: rgb(218, 218, 218);
+  margin: 5px;
+}
+
+.Link{
+  color: inherit;
+  text-decoration: inherit;  
+}
+
+@media screen and (max-width: 768px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .navlinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    height: 95vh;
+    top: 5vh;
+    background-color: rgb(163, 157, 157);
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .navlinks li{
+    opacity: 0;
+  }
+
+  .hamburger-menu{
+    display: block;
+    cursor: pointer;
+  }
+
+  .main-content h1{
+    font-size: 25px !important;
+    padding: 20px;
+  }
+
+  .social-media{
+    width: 20% !important;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 1024px){
+  
 }
 
 .main-content{  
@@ -110,7 +173,7 @@ nav{
 }
 
 .btn-main:hover{
-  background-color: var(--btn-primary-hover);
+  background-color: var(--btn-primary-hover);  
 }
 
 .btn-secondary{
@@ -119,6 +182,7 @@ nav{
 
 .btn-secondary:hover{
   background-color: var(--btn-secondary-hover) !important;
+
 }
 
 

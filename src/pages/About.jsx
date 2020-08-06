@@ -6,8 +6,7 @@ class About extends Component {
     state = {  }
     render() { 
         return ( 
-            <React.Fragment>
-                <h1>This is about</h1>
+            <React.Fragment>                
                 <Navbar></Navbar>
                 <Maincontent></Maincontent>
                                 

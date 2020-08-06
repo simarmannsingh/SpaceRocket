@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import Maincontent from '../components/maincontent';
+
+//  importing Component
 import Navbar from '../components/navbar';
+import Maincontent from '../components/maincontent';
 import SecondaryContent from '../components/secondarycontent';
-import TertiaryContent from '../components/tertiarycontent';
+import MainpageFooter from '../components/mainpagefooter';
 
 class HomePage extends Component {    
     render() { 
@@ -11,7 +13,7 @@ class HomePage extends Component {
                 <Navbar/>
                 <Maincontent/>
                 <SecondaryContent/>
-                <TertiaryContent/>                                
+                <MainpageFooter/>                                
             </React.Fragment>
          );
     }

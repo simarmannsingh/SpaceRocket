@@ -7,9 +7,8 @@ class Maincontent extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <section>
+                <section>                    
                     <div className="main-content">
-
                         <div className="left-grid">
                             <h1>Pendyala Nritya Bharathi <br/> Academy of Fine Arts</h1><br/>
                             <h3>Dr. Sanagavarapu Purushottama Bharathi</h3><br/>

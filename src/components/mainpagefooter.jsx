@@ -30,22 +30,22 @@ class MainpageFooter extends Component {
                     
                     <div className="social-media">                        
                         <span>
-                            <a href="https://facebook.com/simarms">
+                            <a href="https://facebook.com/pnbafac">
                                 <i class="fab fa-facebook-square"></i>
                             </a>
                         </span>
                         <span>
-                            <a href="https://twitter.com/simarmannsingh">
+                            <a href="https://twitter.com/pnbafac">
                                 <i class="fab fa-twitter-square"></i>
                             </a>
                         </span>
                         <span>
-                            <a href="https://instagram.com/simarmannsingh">
+                            <a href="https://instagram.com/pnbafac">
                                 <i class="fab fa-instagram-square"></i>
                             </a>
                         </span>
                         <span>
-                            <a href="https://youtube.com/simarmannsingh">
+                            <a href="https://youtube.com/pnbafac">
                                 <i class="fab fa-youtube-square"></i>
                             </a>
                         </span>                        

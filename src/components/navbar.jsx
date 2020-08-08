@@ -29,7 +29,7 @@ class Navbar extends Component {
         return ( 
             <nav>
                 <div>
-                    <Link to="/"><h3 className="logo">BrandName</h3></Link>
+                    <Link to="/"><h3 className="logo">PNBAFAC</h3></Link>
                 </div>
                 
                 <ul className="navlinks">                    

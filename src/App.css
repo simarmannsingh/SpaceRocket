@@ -69,8 +69,7 @@ nav{
   background-color: var(--btn-secondary);
   padding: 10px;
   border-radius: 5px;
-  margin-top: -9px;
-  
+  margin-top: -9px;  
 }
 
 .navlinks li:nth-child(4):hover{
@@ -106,15 +105,22 @@ nav{
     right: 0px;
     height: 95vh;
     top: 5vh;
-    background-color: rgb(163, 157, 157);
+    background: linear-gradient(125deg, #9392d1, #2169d4); 
+    justify-content: space-around;   
     align-items: center;
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    padding: 40px;
   }
 
-  .navlinks li{
-    opacity: 0;
+  .navlinks li:nth-child(4){   
+    background-color: inherit;
+    padding: 0px;
+  }
+
+  .navlinks li:nth-child(4):hover {
+    background-color: inherit;
   }
 
   .hamburger-menu{
@@ -222,13 +228,14 @@ nav{
 
 .tertiary-content{
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-around;  
   background-color: var(--bg-tertiary);
 
 }
 
 .contact-details{
-  text-align: left;  
+  text-align: left;
+  
 }
 
 .contact-details p{
@@ -236,13 +243,35 @@ nav{
 }
 
 .middle-content{
+  display: grid;
+  grid-template-areas:
+  "column1 column2" ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-between;  
+  width: 45%;
+}
 
+.col1{
+  grid-area: column1;
+  justify-content: space-around;
+}
+
+.col2{
+  grid-area: column2;
+  justify-content: space-around;
+}
+
+.middle-content li{
+  list-style: none;
+  text-align: left;
+  padding: 2px;  
 }
 
 .social-media{
   display: flex;  
   justify-content: space-between;
-  width: 12%;
+  width: 12%;  
   font-size: 30px;  
 }
 .social-media a{

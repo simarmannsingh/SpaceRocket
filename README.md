@@ -1,8 +1,9 @@
 ## About
 
-This is a full-stack project, the frontend part of which was created using [Create React App](https://github.com/facebook/create-react-app).
-It uses the following npm packages for its development :-
+![Website Preview](./website-preview.png)
 
+This is a full-stack project, the frontend part of which was created using [Reactjs](https://reactjs.org/).
+The following npm packages were used for the development of this website :-
 - react-router-dom
 - Express.js
 - Stripe.js
@@ -12,7 +13,7 @@ It uses the following npm packages for its development :-
 
 You can do so by navigating to the root directory of the project and typing the following command in the terminal.
 
-### `npm start`
+    npm start
 
 It runs the app in the development mode.<br />
 You can view the website in the web browser of your choice by visitng the url [http://localhost:3000](http://localhost:3000).
@@ -21,12 +22,12 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 You can use the following command to launches the test runner in the interactive watch mode.
-### `npm test`
+    npm test
 
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 Or perhaps you would like to checkout the production ready build version of the web app, then type the following command in the terminal
-### `npm run build`
+    npm run build
 
 which builds the app for production to a `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.

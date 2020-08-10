@@ -10,7 +10,7 @@ class Maincontent extends Component {
                 <section>                    
                     <div className="main-content">
                         <div className="left-grid">
-                            <h1>Pendyala Nritya Bharathi <br/> Academy of Fine Arts</h1><br/>
+                            <h1>Pendyala Nritya Bharathi <br/> Academy of Fine Arts and Cultures</h1><br/>
                             <h3>Dr. Sanagavarapu Purushottama Bharathi</h3><br/>
                             <button type="button" className="btn-main">
                                 <Link to="/plans" className="Link">Start Here</Link>
@@ -19,7 +19,7 @@ class Maincontent extends Component {
 
                         <div className="right-grid">
                             <span>
-                                <img src={bgmain} alt="bg-mains"/>
+                                <img className="bg-img"  src={bgmain} alt="bg-mains"/>
                             </span>
                         </div>
 

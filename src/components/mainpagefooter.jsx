@@ -4,11 +4,11 @@ class MainpageFooter extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <div className="tertiary-content">
+                <div className="footer">
 
                     <div className="contact-details">
-                        <p> House number 17-47, Jyoti Nagar</p>
-                        <p>North Lalaguda, Secunderabad-17</p>
+                        <p> House number 17-47,<br/>Jyoti Nagar</p>
+                        <p>North Lalaguda,<br/>Secunderabad-17</p>
                         <p>Andhra Pradesh, India</p>
                     </div>
 

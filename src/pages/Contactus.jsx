@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
-import Maincontent from '../components/maincontent';
 import Navbar from '../components/navbar';
+import MainpageFooter from '../components/mainpagefooter';
 
 class Contactus extends Component {
     state = {  }
     render() { 
         return ( 
-            <React.Fragment>
-                <h1>This is Contact us</h1>
-                <Navbar></Navbar>
-                <Maincontent></Maincontent>
-                                
+            <React.Fragment>                
+                <Navbar/>
+
+                <form className="contact-form">
+                    <input type="text" placeholder="Name"/>
+                    <input type="email" placeholder="Email"/>
+                    <input type="text" placeholder="Your Message" className="contact-form-message"/>
+                    <button type="submit"> Submit</button>
+                </form>
+
+
+
+                <MainpageFooter/>
             </React.Fragment>
          );
     }

@@ -1,17 +1,12 @@
 ## About
 
-![Website Preview](./website-preview.png)
+![Website Preview](./pnbafac.png)
 
-This is a full-stack project, the frontend part of which was created using [Reactjs](https://reactjs.org/).
-The following npm packages were used for the development of this website :-
-- react-router-dom
-- Express.js
-- Stripe.js
-- Mongoose 
+This is a public repository for the official website [pnbafac.com](https://pnbafac.com). The website is created using [Reactjs](https://reactjs.org/) and is deployed at Netlify.
 
 ## How Do I test it?
 
-You can do so by navigating to the root directory of the project and typing the following command in the terminal.
+You can do so by simply navigating to the root directory of the project and typing the following command in the terminal.
 
     npm start
 

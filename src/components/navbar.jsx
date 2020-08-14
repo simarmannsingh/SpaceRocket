@@ -2,25 +2,19 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
-    state = {  }
-    
-    // constructor(props){
-    //     super(props);
-    //     this.navSlide = this.navSlide.bind(this);
-    // }
-
+   
     componentDidMount() {
         window.addEventListener('load', this.navSlide);
-     }
-    
+     }    
 
     navSlide = () => {
         const hamburger = document.querySelector('.hamburger-menu');
         const navlinks = document.querySelector('.navlinks');
         
         hamburger.addEventListener('click', () => {
-          navlinks.classList.toggle('nav-active');
-          console.log('navSlide is firing');
+          navlinks.classList.toggle('nav-active');          
+
+          hamburger.classList.toggle('toggle');
         });
       }
     
@@ -44,7 +38,7 @@ class Navbar extends Component {
                     </li>
                     <li>
                         <Link to="/contact-us">Contact us</Link>
-                    </li>                    
+                    </li>
                 </ul>
                 
                 <div className="hamburger-menu">

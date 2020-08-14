@@ -12,8 +12,7 @@ import Contactus from './pages/Contactus';
 function App() {
   return (
     <Router>
-      <div className="App">
-        
+      <div className="App">        
         <div id="page-body">
         <Route path="/" component={HomePage} exact />
         <Route path="/about" component={About} />

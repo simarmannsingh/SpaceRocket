@@ -76,7 +76,7 @@ nav{
   align-items: center;    
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
-  padding: 2.5rem;
+  
 }
 
 .navlinks li{
@@ -168,6 +168,38 @@ nav{
   padding: 2em;
 }
 
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;  
+}
+.contact-form input{
+  width: 50%;
+  height: 2.4em;
+  margin: 0.4em;
+  border-radius: 0.4em;
+  border: none;
+}
+
+.contact-form input::placeholder{
+  padding: 1em;  
+}
+
+.contact-form-message{
+  min-height: 5em;  
+}
+
+.contact-form button{
+  width: 15%;
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+
+
+}
+
+
 .footer{
   display: flex;
   color: var(--text-navbar);
@@ -194,6 +226,7 @@ nav{
   color: var(--bg-secondary);  
 }
 
+
 /*==============================================*/
 /*---------------- Media Queries ---------------*/
 /*==============================================*/
@@ -217,6 +250,7 @@ nav{
     height: 2px;
     background-color: var(--text-navbar);
     margin: 5px;
+    transition: all 0.3s ease;
   }
 
   .main-content{
@@ -269,6 +303,19 @@ nav{
   .social-media a{
     padding: 0.2em !important;
   }
+
+  .toggle .line1{
+    transform: rotate(-45deg) translateY(.6em) ;
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg)  translateY(-.6em);
+  }
+
 }
 
 /*==============================================*/
@@ -290,6 +337,7 @@ nav{
     height: 2px;
     background-color: var(--text-navbar);
     margin: 5px;
+    transition: all 0.3s ease;
   }
 
   .main-content{
@@ -341,7 +389,20 @@ nav{
 
   .social-media a{
     padding: 0.25em;
-  }  
+  }
+  
+  .toggle .line1{
+    transform: rotate(-45deg) translateY(.6em) ;
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg)  translateY(-.6em);
+  }
+
 }
 
 /*==============================================*/
@@ -352,6 +413,20 @@ nav{
   body{
     font-size: 18px;
   }
+
+  .toggle .line1{
+    transform: rotate(-45deg) translateY(.54em) ;
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg)  translateY(-.54em);
+  }
+
+
 }
 
 
@@ -364,6 +439,18 @@ nav{
     font-size: 20px;
   }
 
+  .toggle .line1{
+    transform: rotate(-45deg) translateY(.5em) ;
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg)  translateY(-.5em);
+  }
+
 }
 
 /*==============================================*/
@@ -372,7 +459,7 @@ nav{
 
 @media only screen and (min-width: 768px) {
   body{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .hamburger-menu  div{
@@ -422,6 +509,20 @@ nav{
   .footer{
     padding: 2em;
   }
+
+  .toggle .line1{
+    transform: rotate(-45deg) translateY(.62em) ;
+  }
+
+  .toggle .line2{
+    opacity: 0;
+  }
+
+  .toggle .line3{
+    transform: rotate(45deg)  translateY(-.62em);
+  }
+
+
 }
 
 /*==============================================*/
@@ -430,7 +531,7 @@ nav{
 
 @media only screen and (min-width: 932px) {
   body{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .hamburger-menu  div{
@@ -453,7 +554,7 @@ nav{
 @media only screen and (min-width: 1200px) {
 
   body{
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .left-grid{

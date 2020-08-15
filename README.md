@@ -31,8 +31,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
-
-## Credits
-The website is created entirely by myself however the illustrations used in the website have been taken from freepik.com, a free svg sharing website which allows developers to use svg even for commercial purposes by acknowledging the designers.
-
-The credit for illustrations used on this website goes to freepik.com as those illustrations are uploaded by freepik developement team. I humbly thank freepik for their great website which provides developers such an option. Kudos.

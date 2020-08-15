@@ -10,10 +10,10 @@ class Contactus extends Component {
                 <Navbar/>
 
                 <form className="contact-form">
-                    <input type="text" placeholder="Name"/>
-                    <input type="email" placeholder="Email"/>
-                    <input type="text" placeholder="Your Message" className="contact-form-message"/>
-                    <button type="submit"> Submit</button>
+                    <span><p>Name*</p> <input type="text" required/></span>
+                    <span><p>Email*</p> <input type="email" required/></span>
+                    <span><p>Message*</p> <input type="text" className="contact-form-message" required/></span>
+                    <button type="submit" className="btn-secondary"> Submit</button>
                 </form>
 
 

@@ -46,8 +46,6 @@ class Navbar extends Component {
                     <div className="line2"></div>
                     <div className="line3"></div>
                 </div>
-
-
             </nav>
          );
     }

@@ -11,8 +11,10 @@ class HomePage extends Component {
         return ( 
             <React.Fragment>
                 <Navbar/>
+                <div className="body-content">
                 <Maincontent/>
                 <SecondaryContent/>
+                </div>
                 <MainpageFooter/>                                
             </React.Fragment>
          );

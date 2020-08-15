@@ -8,16 +8,25 @@ class Contactus extends Component {
         return ( 
             <React.Fragment>                
                 <Navbar/>
-
+                <div className="body-content">
                 <form className="contact-form">
-                    <span><p>Name*</p> <input type="text" required/></span>
-                    <span><p>Email*</p> <input type="email" required/></span>
-                    <span><p>Message*</p> <input type="text" className="contact-form-message" required/></span>
-                    <button type="submit" className="btn-secondary"> Submit</button>
+                    <span>
+                        <p>Name*</p>
+                        <input className="contact-form-elements" type="text" required placeholder="Enter you name"/>
+                    </span>
+                    <span>
+                        <p>Email*</p>
+                        <input className="contact-form-elements" type="email" required placeholder="Enter you Email Address"/>
+                    </span>
+                    <span>
+                        <p>Message*</p>
+                        <textarea className="contact-form-elements" name="contactus-message" id="contactus-message" cols="90" rows="10" 
+                                  required placeholder="Enter you message here">
+                        </textarea>
+                    </span>
+                    <button type="submit" className="btn-secondary" style={{marginTop:'1em'}}> Submit</button>
                 </form>
-
-
-
+                </div>
                 <MainpageFooter/>
             </React.Fragment>
          );

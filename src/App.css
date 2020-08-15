@@ -96,10 +96,14 @@ nav{
   text-decoration: inherit;  
 }
 
+.body-content{
+  margin-top: 10vh;
+  min-height: 77vh;
+}
+
 .main-content{
   display: flex;
-  flex-direction: column;
-  margin-top: 10vh;
+  flex-direction: column;  
   color: white;      
   font-family: 'Montserrat', sans-serif;
   background-image: url(./assets/natraja.png);
@@ -174,14 +178,14 @@ nav{
 
 .contact-form span{
   display: block;  
-  width: 60%;  
+  width: 60%;
 }
 
 .contact-form span p{
   color: var(--text-secondary);  
 }
 
-.contact-form input{
+.contact-form-elements{
   width: 95%;
   height: 2.4em;
   margin: 0.8em;  
@@ -189,7 +193,13 @@ nav{
   border: none;  
 }
 
-.contact-form-message{
+.contact-form-elements::placeholder{
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+
+textarea{
+  resize: none;
   min-height: 10em;  
 }
 
@@ -309,6 +319,23 @@ nav{
     transform: rotate(45deg)  translateY(-.6em);
   }
 
+  .contact-form{
+    font-size: .8em;
+    padding: 2em;
+  }
+  
+  .contact-form span{    
+    width: 75%;
+  }
+  
+  .contact-form input{    
+    height: 1.8em;
+  }
+  
+  .contact-form-message{
+    min-height: 7em;  
+  }
+
 }
 
 /*==============================================*/
@@ -395,6 +422,15 @@ nav{
   .toggle .line3{
     transform: rotate(45deg)  translateY(-.6em);
   }
+
+  .contact-form{
+    font-size: .8em;
+  }
+
+  .contact-form span{    
+    width: 80%;
+  }
+  
 
 }
 
@@ -629,6 +665,14 @@ nav{
 
   .social-media{
     font-size: 3em;    
+  }
+
+  .contact-form{
+    font-size: .8em;
+  }
+
+  .contact-form span{    
+    width: 50%;
   }
 }
 

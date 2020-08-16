@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class Navbar extends Component {
    
     componentDidMount() {
-        window.addEventListener('load', this.navSlide);
+        window.addEventListener('load', this.navSlide);        
      }    
 
     navSlide = () => {
@@ -12,9 +12,11 @@ class Navbar extends Component {
         const navlinks = document.querySelector('.navlinks');
         
         hamburger.addEventListener('click', () => {
-          navlinks.classList.toggle('nav-active');          
-
-          hamburger.classList.toggle('toggle');
+            // for animating side-menu
+            navlinks.classList.toggle('nav-active');
+            
+            // for animating Hamburger-menu
+            hamburger.classList.toggle('toggle');
         });
       }
     

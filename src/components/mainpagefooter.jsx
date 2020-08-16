@@ -27,7 +27,6 @@ class MainpageFooter extends Component {
                             </ul>                        
                     </div>
 
-                    
                     <div className="social-media">                        
                         <span>
                             <a href="https://facebook.com/pnbafac">
@@ -49,7 +48,16 @@ class MainpageFooter extends Component {
                                 <i class="fab fa-youtube-square"></i>
                             </a>
                         </span>                        
-                    </div>
+                    </div>                    
+                </div>                
+                <div className="developer-details">
+                    <span>
+                        <p>Made with 
+                            <i class="fas fa-heart"></i> by
+                            <a style={{textDecoration:"underline",color:"var(--text-primary)"}} target="blank" 
+                                href="https://github.com/simarmannsingh">Simar</a>
+                        </p>
+                    </span>
                 </div>
             </React.Fragment>
          );

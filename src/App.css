@@ -229,6 +229,59 @@ textarea{
   color: var(--bg-secondary);  
 }
 
+.developer-details{
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 0.62em;
+  padding-bottom: 2em;
+}
+
+.pricing{
+  display: flex;
+  align-items: center ;
+  justify-content: center;  
+  width: 80%;
+  padding: 4em;  
+  min-height: 77vh;
+  width: 100%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 0.7em;
+  width: 100%;
+  padding: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 2em;
+  border-radius: 0.7em;
+  transition: box-shadow 0.3s;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card p, h5{
+  background-color: rgb(173, 167, 167);
+  text-align: center;
+  padding: 0.7em;
+  color: white;
+}
+
+.card h5{
+  background-color: rgb(158, 191, 221);
+  padding: 1em;  
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 
 /*==============================================*/
 /*---------------- Media Queries ---------------*/

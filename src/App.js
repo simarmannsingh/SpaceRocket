@@ -8,6 +8,8 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import About from './pages/About';
 import Contactus from './pages/Contactus';
+import Plans from './pages/Plans';
+import Pricing from './pages/Pricing';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact-us" component={Contactus} />
         <Route path="/HomePage" component={HomePage} />
+        <Route path="/plans" component={Plans}/>
+        <Route path="/pricing" component={Pricing}/>
         </div>       
     </div>
     </Router>    

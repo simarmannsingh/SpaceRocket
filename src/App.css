@@ -238,20 +238,14 @@ textarea{
   padding-bottom: 2em;
 }
 
-.pricing{
-  display: flex;
-  align-items: center ;
-  justify-content: center;  
-  width: 80%;
-  padding: 4em;  
-  min-height: 77vh;
+.pricing{  
   width: 100%;
+  min-height: 77vh;
 }
 
 .card{
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  flex-direction: column;  
   border-radius: 0.7em;
   width: 100%;
   padding: 1px;
@@ -389,6 +383,16 @@ textarea{
     min-height: 7em;  
   }
 
+  .pricing{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  .card{
+    width: 80%;
+  }
+
 }
 
 /*==============================================*/
@@ -483,8 +487,17 @@ textarea{
   .contact-form span{    
     width: 80%;
   }
-  
 
+  .pricing{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    align-items: center;
+  }
+
+  .card{
+    width: 80%;
+  }
 }
 
 /*==============================================*/
@@ -587,7 +600,7 @@ textarea{
     font-size: 2em;
     text-align: right;
   }
-  
+ 
   .footer{
     padding: 2em;
   }
@@ -712,6 +725,12 @@ textarea{
     text-align: justify;  
   }
 
+
+  .pricing{
+    flex-direction: row;
+    padding: 1em;    
+  }
+  
   .footer{
     padding: 4em;    
   }

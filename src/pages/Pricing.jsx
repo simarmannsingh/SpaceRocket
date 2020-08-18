@@ -6,14 +6,14 @@ import plan2 from "../assets/drawing-1.svg";
 import plan3 from "../assets/drawing-2.svg";
 
 
-class Pricing extends Component {
+class Pricing extends Component {   
     
     render() { 
         return ( 
             <React.Fragment>
                 <Navbar/>
-                <div className="body-content pricing">
-                    
+
+                <div className="body-content pricing">                    
                     <div className="card">
                         <h5>Plan 1</h5>
                         <img src={plan1} alt=""/>

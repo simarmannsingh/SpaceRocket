@@ -52,9 +52,7 @@ class MainpageFooter extends Component {
                 </div>                
                 <div className="developer-details">
                     <span>
-                        <p>Made with 
-                            <i class="fas fa-heart"></i> by
-                            <a style={{textDecoration:"underline",color:"var(--text-primary)"}} target="blank" 
+                        <p>Made with <i class="fas fa-heart"></i> by <a style={{textDecoration:"underline",color:"var(--text-primary)"}} target="blank" 
                                 href="https://github.com/simarmannsingh">Simar</a>
                         </p>
                     </span>

@@ -12,6 +12,7 @@ class Navbar extends Component {
         const navlinks = document.querySelector('.navlinks');
         
         hamburger.addEventListener('click', () => {
+            console.log('Firing navSlide()');
             // for animating side-menu
             navlinks.classList.toggle('nav-active');
             

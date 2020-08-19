@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar';
-import MainpageFooter from "../components/mainpagefooter";
+
 
 class LoginPage extends Component {
     state = {  }
@@ -8,17 +8,21 @@ class LoginPage extends Component {
         return ( 
             <React.Fragment>
                 <Navbar/>
-                <div className="body-content">
+                <div className="body-content">  
 
-                    <form action="submit">
+                    <form action="submit" className="login-form">
                         <div className="login-emain">
-                            <i class="fas fa-user"></i>
-                            <input type="text"/>
+                            <i class="fas fa-user symbol"></i>
+                            <input type="email" name="email-address" placeholder="Enter Email" id="email" required/>
+                        </div>
+                        <div className="password">
+                            <i class="fas fa-key symbol"></i>
+                            <input type="password" name="password" placeholder="Enter password" id="password" required/>
+
                         </div>
                     </form>
 
-                </div>
-                <MainpageFooter/>
+                </div>                
             </React.Fragment>
          );
     }

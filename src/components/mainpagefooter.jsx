@@ -30,29 +30,29 @@ class MainpageFooter extends Component {
                     <div className="social-media">                        
                         <span>
                             <a href="https://facebook.com/pnbafac">
-                                <i class="fab fa-facebook-square"></i>
+                                <i className="fab fa-facebook-square"></i>
                             </a>
                         </span>
                         <span>
                             <a href="https://twitter.com/pnbafac">
-                                <i class="fab fa-twitter-square"></i>
+                                <i className="fab fa-twitter-square"></i>
                             </a>
                         </span>
                         <span>
                             <a href="https://instagram.com/pnbafac">
-                                <i class="fab fa-instagram-square"></i>
+                                <i className="fab fa-instagram-square"></i>
                             </a>
                         </span>
                         <span>
                             <a href="https://youtube.com/pnbafac">
-                                <i class="fab fa-youtube-square"></i>
+                                <i className="fab fa-youtube-square"></i>
                             </a>
                         </span>                        
                     </div>                    
                 </div>                
                 <div className="developer-details">
                     <span>
-                        <p>Made with <i class="fas fa-heart"></i> by <a style={{textDecoration:"underline",color:"var(--text-primary)"}} target="blank" 
+                        <p>Made with <i className="fas fa-heart"></i> by <a style={{textDecoration:"underline",color:"var(--text-primary)"}} target="blank" 
                                 href="https://github.com/simarmannsingh">Simar</a>
                         </p>
                     </span>

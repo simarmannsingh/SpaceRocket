@@ -41,6 +41,7 @@
 
 nav{
   display: flex;
+  flex-direction: row;
   top: 0px;  
   position: fixed;
   width: 100%;
@@ -58,14 +59,40 @@ nav{
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--text-navbar);
-} 
+}
+
+.themes{  
+  display: flex;
+  position: absolute;
+  top: 2.6vh;
+  right: 3%;
+  border: 1px solid rgb(224, 217, 217);
+  width: 3.5em; 
+  height: 1.6em;
+  justify-content: space-around;
+  padding: 0.1em;
+  background-color: rgb(60, 61, 56);
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  z-index: 1;  
+}
+
+.light-mode, .dark-mode{
+  width: 1.2em;
+  cursor: pointer;
+  height: 1.2em;
+  z-index: 2;
+  padding: 0.1em;    
+}
 
 .navlinks{        
   display: flex;
   flex-direction: column;
   position: absolute;
   width: 50%;
-  right: 0px;
+  right: 10%;
   height: 93vh;    
   top: 7vh;
   background-color: var(--bg-tertiary);
@@ -100,6 +127,37 @@ nav{
   margin-top: 10vh;
   min-height: 77vh;
 }
+
+
+.login-form{
+  width: 100%;
+  height: 90vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;          /* for vertical */
+  padding-bottom: 7em;
+}
+
+.login-form input{
+  height: 2em;
+  width: 20em;
+  border-radius: 0.3em;
+  border: none;
+  z-index: 0;  
+}
+
+.login-form input::placeholder{
+  padding-left: 0.5em;
+}
+
+.symbol{
+  padding: 1em;  
+  z-index: 2;
+  color: var(--bg-tertiary);
+  
+}
+
 
 .main-content{
   display: flex;
@@ -238,7 +296,7 @@ textarea{
   padding-bottom: 2em;
 }
 
-.pricing{  
+.plans{  
   width: 100%;
   min-height: 77vh;
 }
@@ -294,12 +352,21 @@ textarea{
   .logo{
     font-size: 1.25rem;
   }
+ 
+  .navlinks{
+    right: 0;
+  }
+
+  .themes{
+    right: 20%;
+    top: calc(5vh - 0.8em);
+  }
 
   .hamburger-menu  div{
     width: 1.25em;
     height: 2px;
     background-color: var(--text-navbar);
-    margin: 5px;
+    margin: 5px;    
     transition: all 0.3s ease;
   }
 
@@ -342,8 +409,8 @@ textarea{
     font-size: 1.1em;
   }
 
-  .contact-details {  flex: 0 1 35%;  }
-  .middle-content  {  flex: 0 1 25%;  }
+  .contact-details { flex: 0 1 35%;  }
+  .middle-content  { flex: 0 1 25%;  }
 
   .social-media{
     flex: 0 1 30%;
@@ -355,7 +422,7 @@ textarea{
   }
 
   .toggle .line1{
-    transform: rotate(-45deg) translateY(.6em) ;
+    transform: rotate(-45deg) translateY(.6em);
   }
 
   .toggle .line2{
@@ -383,7 +450,7 @@ textarea{
     min-height: 7em;  
   }
 
-  .pricing{
+  .plans{
     display: flex;
     flex-direction: column;
     padding: 2em;
@@ -409,6 +476,15 @@ textarea{
     font-size: 1.25rem;
   }
 
+  .navlinks{
+    right: 0;    
+  }
+
+  .themes{
+    right: 20%;
+    top: calc(5vh - 0.8em);
+  }
+  
   .hamburger-menu  div{
     width: 1.25rem;
     height: 2px;
@@ -488,7 +564,7 @@ textarea{
     width: 80%;
   }
 
-  .pricing{
+  .plans{
     display: flex;
     flex-direction: column;
     padding: 2em;
@@ -509,6 +585,11 @@ textarea{
     font-size: 18px;
   }
 
+  .themes{    
+    right: 20%;
+    border: 2px solid rgb(224, 217, 217);
+  }
+
   .toggle .line1{
     transform: rotate(-45deg) translateY(.54em) ;
   }
@@ -521,7 +602,6 @@ textarea{
     transform: rotate(45deg)  translateY(-.54em);
   }
 
-
 }
 
 
@@ -532,6 +612,10 @@ textarea{
 @media only screen and (min-width: 600px) {
   body{
     font-size: 20px;
+  }
+
+  .themes{    
+    right: 12%;
   }
 
   .toggle .line1{
@@ -660,13 +744,18 @@ textarea{
     order: 1;
   }
 
+ .themes{
+   right: 2.5%;
+ }
+
   .navlinks{            
     flex-direction: row;
     width: 40%;
+    right: 8%;
     justify-content: space-around;
     transform: translateX(0%);
-    top: 0px;
     position: absolute;
+    top: 0;
     height: 10vh;    
     align-items: center;    
     padding: 2.5 em;    
@@ -680,7 +769,7 @@ textarea{
     list-style: none;
   }
   
-  .navlinks a{
+  .navlinks a{    
     font-size: 0.8em;    
     color: var(--text-navbar);
     text-decoration: none;
@@ -725,10 +814,9 @@ textarea{
     text-align: justify;  
   }
 
-
-  .pricing{
-    flex-direction: row;
-    padding: 1em;    
+  .plans{
+    flex-direction: row ;
+    padding: 1em;
   }
   
   .footer{

@@ -10,6 +10,7 @@ import About from './pages/About';
 import Contactus from './pages/Contactus';
 import Plans from './pages/Plans';
 import Pricing from './pages/Pricing';
+import LoginPage from './pages/Login';
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
         <Route path="/" component={HomePage} exact />
         <Route path="/about" component={About} />
         <Route path="/contact-us" component={Contactus} />
-        <Route path="/HomePage" component={HomePage} />
+        <Route path="/home" component={HomePage} />
         <Route path="/plans" component={Plans}/>
         <Route path="/pricing" component={Pricing}/>
+        <Route path="/login" component={LoginPage}/>
         </div>       
     </div>
     </Router>    

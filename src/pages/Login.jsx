@@ -18,8 +18,8 @@ class LoginPage extends Component {
                         <div className="password">
                             <i class="fas fa-key symbol"></i>
                             <input type="password" name="password" placeholder="Enter password" id="password" required/>
-
                         </div>
+                        <button type="submit" className="btn-main" style={{margin:"1em",border:"1px solid black" ,fontSize:"18px"}} >Login</button>
                     </form>
 
                 </div>                

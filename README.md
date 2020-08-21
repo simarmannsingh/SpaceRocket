@@ -1,8 +1,8 @@
 ## About
 
-![Website Preview](./pnbafac.png)
+![Website Preview](./pnbafac-preview.png)
 
-This is a public repository for the official website [pnbafac.com](https://pnbafac.com). The website is created using [Reactjs](https://reactjs.org/) and is deployed at Netlify.
+This is a public repository for the official website [https://pnbafac.com](https://pnbafac.com). The website is created using [Reactjs](https://reactjs.org/) and is deployed at [Netlify](https://netlify.com).
 
 ## How Do I test it?
 

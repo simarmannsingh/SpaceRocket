@@ -141,7 +141,7 @@ nav{
 
 .login-form input{
   height: 2em;
-  width: 20em;
+  width: 25em;
   border-radius: 0.3em;
   border: none;
   z-index: 0;  
@@ -152,7 +152,8 @@ nav{
 }
 
 .symbol{
-  padding: 1em;  
+  padding: 1em;
+  margin-left: -1.5em;
   z-index: 2;
   color: var(--bg-tertiary);
   
@@ -370,6 +371,10 @@ textarea{
     transition: all 0.3s ease;
   }
 
+  .login-form input{    
+    width: 15em;
+  }
+
   .main-content{
     box-shadow:inset 5px 5px 85px rgba(0,0,0,.9);
     -webkit-box-shadow:inset 5px 5px 85px rgba(0,0,0,.9);
@@ -493,6 +498,10 @@ textarea{
     transition: all 0.3s ease;
   }
 
+  .login-form input{    
+    width: 16em;
+  }
+
   .main-content{
     box-shadow:inset 5px 5px 85px rgba(0,0,0,.9);
     -webkit-box-shadow:inset 5px 5px 85px rgba(0,0,0,.9);
@@ -614,6 +623,10 @@ textarea{
     font-size: 20px;
   }
 
+  .login-form input{    
+    width: 20em;
+  }
+
   .themes{    
     right: 12%;
   }
@@ -644,6 +657,10 @@ textarea{
   .hamburger-menu  div{
     width: 1.35em;    
     margin: 7px;
+  }
+
+  .login-form input{    
+    width: 22em;
   }
 
   .main-content{
@@ -747,6 +764,10 @@ textarea{
  .themes{
    right: 2.5%;
  }
+
+ .login-form input{    
+  width: 25em;
+}
 
   .navlinks{            
     flex-direction: row;

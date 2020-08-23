@@ -32,6 +32,9 @@
 
 }
 
+h1, h2, h3, h4, h5, h6, p{
+  color: var(--text-secondary);
+}
 .App {
   /* background-color: var(--bg-tertiary); */
   background: linear-gradient(45deg, var(--bg-secondary),var(--bg-tertiary));
@@ -135,7 +138,7 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;          /* for vertical */
+  justify-content: center;          /* for vertical center */
   padding-bottom: 7em;
 }
 
@@ -158,7 +161,6 @@ nav{
   color: var(--bg-tertiary);
   
 }
-
 
 .main-content{
   display: flex;
@@ -260,6 +262,24 @@ nav{
 textarea{
   resize: none;
   min-height: 10em;  
+}
+
+.contactsubmission{
+justify-content: center;
+}
+
+.contactsubmission span{
+  padding: 1em;
+  text-align: center;
+}
+
+.fa-2x{  font-size:2em;  }
+.fa-3x{  font-size:3em;  }
+.fa-4x{  font-size:4em;  }
+.fa-5x{  font-size:5em;  }
+
+.fa-2x, .fa-3x, .fa-4x, .fa-5x{
+  color: var(--text-secondary);
 }
 
 .footer{

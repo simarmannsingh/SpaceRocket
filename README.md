@@ -2,6 +2,8 @@
 
 ![Website Preview](./pnbafac-preview.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57ec8d8b-501f-4ac7-a7b2-a5f26e294924/deploy-status)](https://app.netlify.com/sites/pnbafac/deploys)
+
 This is a public repository for the official website [https://pnbafac.com](https://pnbafac.com). The website is created using [Reactjs](https://reactjs.org/) and is deployed at [Netlify](https://netlify.com).
 
 ## How Do I test it?

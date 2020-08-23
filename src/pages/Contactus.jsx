@@ -9,14 +9,14 @@ class Contactus extends Component {
             <React.Fragment>                
                 <Navbar/>
                 <div className="body-content">
-                <form className="contact-form">
+                <form name="contactus" className="contact-form" method="POST" data-netlify="true" action="/pages/contactsubmission" >
                     <span>
                         <p>Name*</p>
-                        <input className="contact-form-elements" type="text" required placeholder="Enter you name"/>
+                        <input name="name" className="contact-form-elements" type="text" required placeholder="Enter you name"/>
                     </span>
                     <span>
                         <p>Email*</p>
-                        <input className="contact-form-elements" type="email" required placeholder="Enter you Email Address"/>
+                        <input name="email" className="contact-form-elements" type="email" required placeholder="Enter you Email Address"/>
                     </span>
                     <span>
                         <p>Message*</p>

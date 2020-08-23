@@ -11,6 +11,7 @@ import Contactus from './pages/Contactus';
 import Plans from './pages/Plans';
 import Pricing from './pages/Pricing';
 import LoginPage from './pages/Login';
+import ContactSubmission from './pages/contactsubmission';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/plans" component={Plans}/>
         <Route path="/pricing" component={Pricing}/>
         <Route path="/login" component={LoginPage}/>
+        <Route path="/contactsubmission" component={ContactSubmission}/>
         </div>       
     </div>
     </Router>    

@@ -9,7 +9,8 @@ class Contactus extends Component {
             <React.Fragment>                
                 <Navbar/>
                 <div className="body-content">
-                <form name="contactus" className="contact-form" method="POST" data-netlify="true" action="/pages/contactsubmission" >
+                <form name="contactus" className="contact-form" method="POST" data-netlify="true" 
+                action="/submissionsuccess" >
                     <span>
                         <p>Name*</p>
                         <input name="name" className="contact-form-elements" type="text" required placeholder="Enter you name"/>

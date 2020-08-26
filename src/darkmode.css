@@ -1,0 +1,28 @@
+:root{
+    font-size: 16px;  
+    font-family: 'Montserrat', sans-serif;
+     
+    /* Text colors */
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --text-navbar : white;  
+  
+    /* Background colors */
+    --bg-primary: #23232e;
+    --bg-secondary: #9e9ea5;
+    --bg-tertiary: #19234c;
+  
+    /* Button colors */
+    --btn-primary: #66676d;
+    --btn-primary-hover: #6370e0;
+    --btn-secondary:#3a8ff0;
+    --btn-secondary-hover:#529df3;
+    --bg-social: #babac2;
+  
+    --btn-gradient-accent1: #6370e0;
+    --btn-gradient-accent2: #4e2ce4;
+  
+    /* Animation speeds */
+    --transition-speed: 600ms;
+  
+  }

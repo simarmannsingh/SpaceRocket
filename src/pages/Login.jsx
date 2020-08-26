@@ -11,6 +11,9 @@ class LoginPage extends Component {
                 <div className="body-content">  
 
                     <form action="submit" className="login-form">
+                        <div className="fa-5x">
+                            <i class="fas fa-user-circle"></i>
+                        </div>                        
                         <div className="login-emain">
                             <i class="fas fa-user symbol"></i>
                             <input type="email" name="email-address" placeholder="Enter Email" id="email" required/>

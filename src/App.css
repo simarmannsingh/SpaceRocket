@@ -59,9 +59,9 @@ nav{
 }
 
 .logo{  
-  text-transform: uppercase;
+  text-transform: uppercase;  
   letter-spacing: 3px;
-  color: var(--text-navbar);
+  color: var(--text-navbar);  
 }
 
 .themes{  
@@ -158,7 +158,7 @@ nav{
   padding: 1em;
   margin-left: -1.5em;
   z-index: 2;
-  color: var(--bg-tertiary);
+  color: var(--bg-social);
   
 }
 
@@ -224,7 +224,7 @@ nav{
 
  .secondary-content{
   display: block;
-  background-color: var(--bg-secondary);
+  background: linear-gradient(45deg, var(--bg-secondary),var(--bg-tertiary));
   color: var(--text-navbar);  
   text-align: center;
   padding: 2em;
@@ -279,12 +279,12 @@ justify-content: center;
 .fa-5x{  font-size:5em;  }
 
 .fa-2x, .fa-3x, .fa-4x, .fa-5x{
-  color: var(--text-secondary);
+  color: var(--bg-social);
 }
 
 .footer{
   display: flex;
-  color: var(--text-navbar);
+  color: var(--bg-social);
   padding-top: 1em;
   background-color: var(--bg-tertiary);
   justify-content: space-between;  
@@ -304,8 +304,8 @@ justify-content: center;
   flex: 0 1 20%;
 }
 
-.social-media a{
-  color: var(--bg-secondary);  
+.contact-details p, .social-media a{
+  color: var(--bg-social);
 }
 
 .developer-details{

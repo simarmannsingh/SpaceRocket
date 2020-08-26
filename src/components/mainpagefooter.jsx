@@ -7,9 +7,9 @@ class MainpageFooter extends Component {
                 <div className="footer">
 
                     <div className="contact-details">
-                        <p> House number 17-47,<br/>Jyoti Nagar</p>
-                        <p>North Lalaguda,<br/>Secunderabad-17</p>
-                        <p>Andhra Pradesh, India</p>
+                        <span> <p>House number 17-47, Jyoti Nagar</p></span>
+                        <span> <p>North Lalaguda, Secunderabad-17</p></span>
+                        <span> <p>Andhra Pradesh, India</p></span>
                     </div>
 
                     
